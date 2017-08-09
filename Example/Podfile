@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CMPhotoAlbum_Example' do
+  pod 'CMPhotoAlbum', :path => '../'
+
+  target 'CMPhotoAlbum_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
