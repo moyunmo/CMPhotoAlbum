@@ -35,5 +35,9 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要获取照片授权</string>
+	<key>NSCameraUsageDescription</key>
+	<string>需要获取相机授权</string>
 </dict>
 </plist>

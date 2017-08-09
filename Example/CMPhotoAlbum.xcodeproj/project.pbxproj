@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1556AC44A031C9FD9C5506E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1556AC44A031C9FD9C5506E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		17DB4C3B6F942EF81A35EC8C /* Pods-CMPhotoAlbum_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPhotoAlbum_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMPhotoAlbum_Tests/Pods-CMPhotoAlbum_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		31394E3A44E8121928149A72 /* Pods_CMPhotoAlbum_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMPhotoAlbum_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* CMPhotoAlbum_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMPhotoAlbum_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +41,10 @@
 		607FACE51AFB9204008FA782 /* CMPhotoAlbum_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMPhotoAlbum_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		70C04A2986D5272DC87B0120 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		70C04A2986D5272DC87B0120 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7D2F369913CF70E11E6D94A5 /* Pods-CMPhotoAlbum_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPhotoAlbum_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMPhotoAlbum_Example/Pods-CMPhotoAlbum_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A1BFDDD25E9209B31BBA47D3 /* Pods-CMPhotoAlbum_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPhotoAlbum_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMPhotoAlbum_Example/Pods-CMPhotoAlbum_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B051544BB14F00FF6ED22D9D /* CMPhotoAlbum.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CMPhotoAlbum.podspec; path = ../CMPhotoAlbum.podspec; sourceTree = "<group>"; };
+		B051544BB14F00FF6ED22D9D /* CMPhotoAlbum.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CMPhotoAlbum.podspec; path = ../CMPhotoAlbum.podspec; sourceTree = "<group>"; };
 		D365314ABD1D99AC6C57B2A9 /* Pods_CMPhotoAlbum_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMPhotoAlbum_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFF7B8A088ABC20E136ECEB /* Pods-CMPhotoAlbum_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPhotoAlbum_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMPhotoAlbum_Tests/Pods-CMPhotoAlbum_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4262G7AU8L;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4262G7AU8L;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -496,10 +498,11 @@
 			baseConfigurationReference = 7D2F369913CF70E11E6D94A5 /* Pods-CMPhotoAlbum_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4262G7AU8L;
 				INFOPLIST_FILE = CMPhotoAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuchaoshi.org.cocoapods.demo.CMPhotoAlbum-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -510,10 +513,11 @@
 			baseConfigurationReference = A1BFDDD25E9209B31BBA47D3 /* Pods-CMPhotoAlbum_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4262G7AU8L;
 				INFOPLIST_FILE = CMPhotoAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuchaoshi.org.cocoapods.demo.CMPhotoAlbum-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -523,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17DB4C3B6F942EF81A35EC8C /* Pods-CMPhotoAlbum_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4262G7AU8L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDFF7B8A088ABC20E136ECEB /* Pods-CMPhotoAlbum_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4262G7AU8L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

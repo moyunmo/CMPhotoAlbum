@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CMPhotoAlbum
 //
-//  Created by momo605654602@gmail.com on 08/09/2017.
+//  Created by momo605654602@gmail.com on 07/01/2017.
 //  Copyright (c) 2017 momo605654602@gmail.com. All rights reserved.
 //
 

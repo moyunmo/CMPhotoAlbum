@@ -1,0 +1,16 @@
+PODS:
+  - CMPhotoAlbum (0.1.0)
+
+DEPENDENCIES:
+  - CMPhotoAlbum (from `../`)
+
+EXTERNAL SOURCES:
+  CMPhotoAlbum:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CMPhotoAlbum: f11cd526699eff27835c59fa9278a5ede13d8421
+
+PODFILE CHECKSUM: 292e2bca0b22414fdc40c5ebaf0d48cdf984eea5
+
+COCOAPODS: 1.2.0

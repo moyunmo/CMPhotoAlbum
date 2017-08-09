@@ -1,0 +1,6 @@
+framework module Pods_CMPhotoAlbum_Tests {
+  umbrella header "Pods-CMPhotoAlbum_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

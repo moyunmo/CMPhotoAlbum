@@ -1,0 +1,6 @@
+framework module CMPhotoAlbum {
+  umbrella header "CMPhotoAlbum-umbrella.h"
+
+  export *
+  module * { export * }
+}
