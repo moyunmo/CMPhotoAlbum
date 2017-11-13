@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-@objc class TDClipImage : NSObject {
+@objc open class TDClipImage : NSObject {
     class func clipImage(image: UIImage, mask: CGImage) -> UIImage {
         let width = image.size.width
         let height = image.size.height
