@@ -64,8 +64,8 @@ extension ViewController: CMPhotoAlbumViewControllerDelegate {
 //        
 //    }
     
-    func dismissPhotoAlbum(withImage: UIImage) {
-        self.imgView.image = withImage
+    func dismissPhotoAlbum(image: UIImage, asset: PHAsset?) {
+        self.imgView.image = image
     }
     
 //    func photoAlbumDidCancel() {

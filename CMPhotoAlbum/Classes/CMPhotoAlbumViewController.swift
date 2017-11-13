@@ -8,26 +8,26 @@
 import UIKit
 import Photos
 import PhotosUI
+import AssetsLibrary
 
 public protocol CMPhotoAlbumViewControllerDelegate : class {
-    func dismissPhotoAlbum(withImage: UIImage)
-    func dismissPhotoAlbum(withAsset: PHAsset)
-    func dismissComplete()
+    func dismissPhotoAlbum(image: UIImage,asset: PHAsset?)
+    func failedGetPhoto(error: NSError)
     func photoAlbumDidCancel()
     func needCustomCamera() -> Bool
     func openCamera()
 }
 
 extension CMPhotoAlbumViewControllerDelegate {
-    public func dismissPhotoAlbum(withImage: UIImage) {}
-    public func dismissPhotoAlbum(withAsset: PHAsset) {}
-    public func dismissComplete() {}
+    public func dismissPhotoAlbum(image: UIImage,asset: PHAsset?) {}
+    public func failedGetPhoto(error: NSError) {}
     public func photoAlbumDidCancel() {}
     public func needCustomCamera() -> Bool { return false }
     public func openCamera() {}
 }
 
 public struct CMPhotoAlbumConfig {
+    
     public var defaultCameraTitle = "Camera Roll"
     public var backIcon = CMBundle.bundleImage(named: "nav_back")
     public var videoIcon = CMBundle.bundleImage(named: "video")
@@ -219,15 +219,16 @@ extension CMPhotoAlbumViewController : UIImagePickerControllerDelegate,UINavigat
     
     open func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            self.delegate?.dismissPhotoAlbum(withImage: image)
+            self.delegate?.dismissPhotoAlbum(image: image, asset: nil)
+        } else {
+            self.delegate?.failedGetPhoto(error: NSError.init(domain: "CMPADomain", code: 10001, userInfo: ["info":"have no image"]))
         }
-        if let assertUrl = info[UIImagePickerControllerReferenceURL] as? URL {
-            let result = PHAsset.fetchAssets(withALAssetURLs: [assertUrl], options: nil)
-            if let asset = result.firstObject {
-                self.delegate?.dismissPhotoAlbum(withAsset: asset)
-            }
-        }
-        self.delegate?.dismissComplete()
+//        if let assertUrl = info[UIImagePickerControllerReferenceURL] as? URL {
+//            let result = PHAsset.fetchAssets(withALAssetURLs: [assertUrl], options: nil)
+//            if let asset = result.firstObject {
+//                self.delegate?.dismissPhotoAlbum(withAsset: asset)
+//            }
+//        }
         picker.dismiss(animated: false) {
             self.closeCurrentVC()
         }
@@ -253,10 +254,10 @@ extension CMPhotoAlbumViewController : UICollectionViewDelegate,UICollectionView
         guard let collection = self.currentAlbumCollection else { return }
         guard let asset = collection.getAsset(at: indexPath.row) else { return }
         if let image = self.photoLibrary.fetchOriginImage(asset: asset) {
-            self.delegate?.dismissPhotoAlbum(withImage: image)
+            self.delegate?.dismissPhotoAlbum(image: image, asset: asset)
+        } else {
+            self.delegate?.failedGetPhoto(error: NSError.init(domain: "CMPADomain", code: 10001, userInfo: ["info":"have no image"]))
         }
-        self.delegate?.dismissPhotoAlbum(withAsset: asset)
-        self.delegate?.dismissComplete()
         self.closeCurrentVC()
     }
     

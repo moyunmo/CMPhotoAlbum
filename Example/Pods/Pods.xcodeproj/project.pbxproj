@@ -15,6 +15,7 @@
 		44D4A5F7EAA85BDB70B6E57D3083920E /* CMPhotoAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E8CFFC1577A6F08F09EAE8DF2F8F5 /* CMPhotoAlbumViewController.xib */; };
 		64CD692EBEB81262D270C34F1A299076 /* CMPAListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7005A84B6A34544C3DCCF6CFB6C8C1 /* CMPAListViewCell.xib */; };
 		74D903E1DF6019DFA021B641C58BC36E /* Pods-CMPhotoAlbum_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4764340F642BFC3675F69166BB3CF1 /* Pods-CMPhotoAlbum_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7743682E1FB9E32400C7E74E /* TDClipImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743682D1FB9E32400C7E74E /* TDClipImage.swift */; };
 		7DA3BD371D21CA2A25539133DEC71385 /* CMPAListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324E29D057628D0E507D7824C2A5DDA /* CMPAListViewCell.swift */; };
 		9778AFEFFC3835A2DC7A66ECC7427D6F /* Pods-CMPhotoAlbum_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD265FD9A511509C3E9D6C79BD75EBB /* Pods-CMPhotoAlbum_Example-dummy.m */; };
 		9F8D1B3F756AE7F5A0C22EFC17CD5DC9 /* CMPhotoAlbum.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49741A3997F1A3A797E03DE784776EB0 /* CMPhotoAlbum.bundle */; };
@@ -48,9 +49,9 @@
 		1EE12C540057E59F42765AD3AFD73869 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD265FD9A511509C3E9D6C79BD75EBB /* Pods-CMPhotoAlbum_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMPhotoAlbum_Example-dummy.m"; sourceTree = "<group>"; };
 		25F67361797490425ADB63A3596292DD /* Pods-CMPhotoAlbum_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMPhotoAlbum_Tests-umbrella.h"; sourceTree = "<group>"; };
-		32D8593236D9405D8F51B07DB96E0FF4 /* Pods-CMPhotoAlbum_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CMPhotoAlbum_Tests.modulemap"; sourceTree = "<group>"; };
+		32D8593236D9405D8F51B07DB96E0FF4 /* Pods-CMPhotoAlbum_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CMPhotoAlbum_Tests.modulemap"; sourceTree = "<group>"; };
 		3735E7E4E87942A830FC1C855CA1005F /* Pods-CMPhotoAlbum_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMPhotoAlbum_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3A0B86DE046F2388E352F5A1A37BE871 /* CMPhotoAlbum.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CMPhotoAlbum.modulemap; sourceTree = "<group>"; };
+		3A0B86DE046F2388E352F5A1A37BE871 /* CMPhotoAlbum.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CMPhotoAlbum.modulemap; sourceTree = "<group>"; };
 		4324E29D057628D0E507D7824C2A5DDA /* CMPAListViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMPAListViewCell.swift; sourceTree = "<group>"; };
 		4558DA0F7C266EE661B92A033EB1E1C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49741A3997F1A3A797E03DE784776EB0 /* CMPhotoAlbum.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = CMPhotoAlbum.bundle; sourceTree = "<group>"; };
@@ -58,22 +59,23 @@
 		4B33AA7C31CFFE7ECAD249C7910D34EC /* UIButton+CMExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+CMExtension.swift"; sourceTree = "<group>"; };
 		4BAC463D34F338A83808BEC2D78801B7 /* CMPhotoAlbum-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMPhotoAlbum-umbrella.h"; sourceTree = "<group>"; };
 		4C7F56BB7E5A59B2A3080BFD9BB79FCE /* Pods-CMPhotoAlbum_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMPhotoAlbum_Tests-dummy.m"; sourceTree = "<group>"; };
-		581BA64E1BFA146C0289C171B29DE4A1 /* Pods_CMPhotoAlbum_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMPhotoAlbum_Example.framework; path = "Pods-CMPhotoAlbum_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		581BA64E1BFA146C0289C171B29DE4A1 /* Pods_CMPhotoAlbum_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMPhotoAlbum_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B6C434EA31B9FF9EEBFF59BC64A0D9 /* CMPhotoAlbum.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMPhotoAlbum.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		71A1DC7794C3E397E9574B662FC44911 /* Pods-CMPhotoAlbum_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMPhotoAlbum_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		77F7D306103942FDCE3DF29902241898 /* Pods-CMPhotoAlbum_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CMPhotoAlbum_Example.modulemap"; sourceTree = "<group>"; };
+		7743682D1FB9E32400C7E74E /* TDClipImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDClipImage.swift; sourceTree = "<group>"; };
+		77F7D306103942FDCE3DF29902241898 /* Pods-CMPhotoAlbum_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CMPhotoAlbum_Example.modulemap"; sourceTree = "<group>"; };
 		8401821206A7730112E6358CBD1DBB1F /* Pods-CMPhotoAlbum_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMPhotoAlbum_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		876A6FD3CF0DF4B2F11DF78ECBAB2E72 /* CMPhotoAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMPhotoAlbum.framework; path = CMPhotoAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		876A6FD3CF0DF4B2F11DF78ECBAB2E72 /* CMPhotoAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMPhotoAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B67B39C86F711CE068EC0305E1B736 /* Pods-CMPhotoAlbum_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMPhotoAlbum_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A517604CA89A73F300FBA3C585F93B08 /* CMPhotoLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMPhotoLibrary.swift; sourceTree = "<group>"; };
 		AABA3E5B5DA942FAE9B0458EABBB024F /* CMPACollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMPACollectionViewCell.swift; sourceTree = "<group>"; };
 		B98B552AB8B05294BC8ADC497D6CEE54 /* Pods-CMPhotoAlbum_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMPhotoAlbum_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BBF195C02857E577D1F405D27D22001F /* CMPACollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CMPACollectionViewCell.xib; sourceTree = "<group>"; };
 		BF7005A84B6A34544C3DCCF6CFB6C8C1 /* CMPAListViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CMPAListViewCell.xib; sourceTree = "<group>"; };
 		C8A4D3DD06EFB1D572095A4BE0D652B7 /* Pods-CMPhotoAlbum_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMPhotoAlbum_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CD76D49D60B5F8942C453B857686E683 /* Pods_CMPhotoAlbum_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMPhotoAlbum_Tests.framework; path = "Pods-CMPhotoAlbum_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD76D49D60B5F8942C453B857686E683 /* Pods_CMPhotoAlbum_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMPhotoAlbum_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6121B80BB54023EDB6A2A955DF8FE7D /* Pods-CMPhotoAlbum_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMPhotoAlbum_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DF752FB24AE6DA47E30539414AF16AF5 /* CMPAPopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMPAPopView.swift; sourceTree = "<group>"; };
 		DF99D405CF398A1DE72180489188BCA0 /* Pods-CMPhotoAlbum_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMPhotoAlbum_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -141,7 +143,6 @@
 			children = (
 				DC8C84BEE466230A7F03C24A9875DBBD /* Classes */,
 			);
-			name = CMPhotoAlbum;
 			path = CMPhotoAlbum;
 			sourceTree = "<group>";
 		};
@@ -168,7 +169,6 @@
 			children = (
 				7A82D435DFF1E55891ABA33352B3894B /* Assets */,
 			);
-			name = CMPhotoAlbum;
 			path = CMPhotoAlbum;
 			sourceTree = "<group>";
 		};
@@ -180,7 +180,6 @@
 				49741A3997F1A3A797E03DE784776EB0 /* CMPhotoAlbum.bundle */,
 				0A8E8CFFC1577A6F08F09EAE8DF2F8F5 /* CMPhotoAlbumViewController.xib */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -238,8 +237,8 @@
 				04BC1908A7A6DAA0677700D5C41244BA /* CMPhotoAlbumViewController.swift */,
 				A517604CA89A73F300FBA3C585F93B08 /* CMPhotoLibrary.swift */,
 				4B33AA7C31CFFE7ECAD249C7910D34EC /* UIButton+CMExtension.swift */,
+				7743682D1FB9E32400C7E74E /* TDClipImage.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -427,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA79D423768BBED51761E9733D0B2965 /* CMBundle.swift in Sources */,
+				7743682E1FB9E32400C7E74E /* TDClipImage.swift in Sources */,
 				0D07A5C0B093607BCDF118FFF465C2DB /* CMPACollectionViewCell.swift in Sources */,
 				7DA3BD371D21CA2A25539133DEC71385 /* CMPAListViewCell.swift in Sources */,
 				C3304824761AB8D317C9F6152194A976 /* CMPAPopView.swift in Sources */,
