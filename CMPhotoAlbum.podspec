@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMPhotoAlbum'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A simple component for replacing a system album.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ A simple component for replacing a system album. 一个简单的替换系统相�
   s.homepage         = 'https://github.com/moyunmo/CMPhotoAlbum'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'momo605654602@gmail.com' => 'moyunmo@hotmail.com' }
+  s.author           = { 'momo605654602@gmail.com' => 'momo605654602@gmail.com' }
   s.source           = { :git => 'https://github.com/moyunmo/CMPhotoAlbum.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
