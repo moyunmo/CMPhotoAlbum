@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @objc open class TDClipImage : NSObject {
-    class func clipImage(image: UIImage, mask: CGImage) -> UIImage {
+    open class func clipImage(image: UIImage, mask: CGImage) -> UIImage {
         let width = image.size.width
         let height = image.size.height
         let maskData = UnsafeMutablePointer(mutating: CFDataGetBytePtr(mask.dataProvider!.data)!)
@@ -36,7 +36,7 @@ import UIKit
         return result!
     }
     
-    class func conver(imgRef: Unmanaged<CGImage>) -> CGImage {
+    open class func conver(imgRef: Unmanaged<CGImage>) -> CGImage {
         return imgRef.takeUnretainedValue()
     }
 }
