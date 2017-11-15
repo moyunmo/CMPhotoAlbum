@@ -11,7 +11,7 @@ import PhotosUI
 import AssetsLibrary
 
 @objc public protocol CMPhotoAlbumViewControllerDelegate : class {
-    @objc optional func dismissPhotoAlbum(image: UIImage,asset: PHAsset?)
+    func dismissPhotoAlbum(image: UIImage,asset: PHAsset?)
     @objc optional func failedGetPhoto(error: NSError)
     @objc optional func photoAlbumDidCancel()
     @objc optional func needCustomCamera() -> Bool

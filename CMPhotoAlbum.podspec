@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMPhotoAlbum'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'A simple component for replacing a system album.'
 
 # This description is used to generate tags and improve search results.
